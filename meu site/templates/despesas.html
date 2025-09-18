@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ROTA+ | Despesas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='despesas.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">ROTA+</div>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="#">Alunos</a></li>
+            <li><a href="/veiculos">Veículos</a></li>
+            <li><a href="#">Motorista</a></li>
+            <li><a href="/rotas">Rotas</a></li>
+            <li class="active"><a href="/despesas">Despesas</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main class="content">
+        <header class="topbar">
+            <h1>Despesas</h1>
+            <button class="btn-green">Soma das Despesas</button>
+        </header>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <button>Data ⌄</button>
+            <button>Rota ⌄</button>
+            <button>Veículo ⌄</button>
+            <button>Motorista ⌄</button>
+            <button class="reset">⟲ Resetar Filtro</button>
+        </div>
+
+        <section class="container">
+            <!-- Lista -->
+            <div class="lista">
+                <div class="card selected">
+                    <h3>Heitor Gabriel <span>Total R$ 5000.00</span></h3>
+                    <p>Seg-Qua-Qui-Sex</p>
+                    <p>Ônibus Mercedes - ROC4J23</p>
+                </div>
+
+                <div class="card">
+                    <h3>Filipe Mendes <span>Total R$ 1500.00</span></h3>
+                    <p>Seg-Ter-Qua-Qui-Sex</p>
+                    <p>Ônibus Mercedes - ROC20L09</p>
+                </div>
+
+                <div class="card">
+                    <h3>Betanny Alexandra <span>Total R$ 2000.00</span></h3>
+                    <p>Seg-Qua-Sex</p>
+                    <p>Ônibus Mercedes - ROC27J12</p>
+                </div>
+            </div>
+
+            <!-- Detalhes -->
+            <div class="detalhes">
+                <div class="box">
+                    <h3>Heitor Gabriel</h3>
+                    <p>Ônibus Mercedes ROC-4J23</p>
+                    <p>20/02 - 04/05 ✎</p>
+                    <p><strong>Total R$ 3000.00</strong></p>
+                    <button class="btn-yellow">Comprovantes</button>
+                </div>
+
+                <h2>Ônibus</h2>
+                <div class="box">
+                    <p>Ônibus Mercedes - ROC4J23</p>
+                    <p>Diesel | 20/02/2025</p>
+                </div>
+
+                <div class="box">
+                    <p>Ônibus Mercedes - ROC20L09</p>
+                    <p>Diesel | 04/05/2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

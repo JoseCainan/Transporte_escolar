@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ROTA+</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">ROTA+</div>
+        <nav>
+            <a href="/dashboard">Dashboard Alunos</a>
+            <a href="/veiculos">Veículos</a>
+            <a href="/rotas">Rotas</a>
+            <a href="/despesas">Despesas</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>O Jeito mais Inteligente <br> de Gerenciar o Transporte Escolar.</h1>
+            <div class="buttons">
+                <a href="/comecar" class="btn">Começar</a>
+                <a href="/login" class="btn-outline">Acessar Sistema</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

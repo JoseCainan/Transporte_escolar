@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ROTA+ | Veículos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='veiculos.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">ROTA+</div>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="#">Alunos</a></li>
+            <li class="active"><a href="/veiculos">Veículos</a></li>
+            <li><a href="#">Motorista</a></li>
+            <li><a href="/rotas">Rotas</a></li>
+            <li><a href="/despesas">Despesas</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <header class="topbar">
+            <h1>Veículos</h1>
+            <button class="btn-green">Adicionar Veículo +</button>
+        </header>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Pesquise por: Veículo ou Placa">
+        </div>
+
+        <section class="container">
+            <div class="lista">
+                <div class="card selected">
+                    <h3>Ônibus Mercedes - ROC4J23</h3>
+                    <p>Diesel</p>
+                    <p>20/02/2025</p>
+                </div>
+
+                <div class="card">
+                    <h3>Ônibus Mercedes - ROC4J23</h3>
+                    <p>Diesel</p>
+                    <p>26/02/2025</p>
+                </div>
+
+                <div class="card">
+                    <h3>Ônibus Mercedes - ROC4J23</h3>
+                    <p>Diesel</p>
+                    <p>29/04/2025</p>
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <div class="box">
+                    <h3>Ônibus Mercedes - ROC4J23</h3>
+                    <p>Diesel | 20/02/2025</p>
+                    
+                    <h4>Observações</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    
+                    <h4>Motorista</h4>
+                    <p class="motorista">José Cainan ✎</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

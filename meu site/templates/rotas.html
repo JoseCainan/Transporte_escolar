@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ROTA+ | Rotas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='rotas.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">ROTA+</div>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="#">Alunos</a></li>
+            <li><a href="/veiculos">Veículos</a></li>
+            <li><a href="#">Motorista</a></li>
+            <li class="active"><a href="/rotas">Rotas</a></li>
+            <li><a href="/despesas">Despesas</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </aside>
+
+  
+    <main class="content">
+        <header class="topbar">
+            <h1>Rotas</h1>
+            <button class="btn-green">Add Rotas +</button>
+        </header>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Pesquise por: Local ou Motoristas">
+        </div>
+
+        <section class="container">
+            <div class="lista">
+                <div class="card selected">
+                    <h3>Rota01 <span class="dia">Seg-Qua-Sex</span></h3>
+                    <p>Centro - Antenor Viana</p>
+                    <p><strong>Heitor Gabriel</strong></p>
+                    <button class="btn-small">Editar</button>
+                </div>
+
+                <div class="card">
+                    <h3>Rota02 <span class="dia">Seg-Ter-Qua-Qui-Sex</span></h3>
+                    <p>Vila Paraíso - IFMA</p>
+                    <p><strong>Filipe Mendes</strong></p>
+                    <button class="btn-small">Editar</button>
+                </div>
+
+                <div class="card">
+                    <h3>Rota03 <span class="dia">Seg-Ter-Qua</span></h3>
+                    <p>Cohab - IFMA</p>
+                    <p><strong>Marcony Henrique</strong></p>
+                    <button class="btn-small">Editar</button>
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <div class="mapa">
+                    <img src="{{ url_for('static', filename='mapa_exemplo.png') }}" alt="Mapa da Rota">
+                </div>
+                <div class="info">
+                    <h3>Rota 01</h3>
+                    <p>Centro - Antenor Viana</p>
+                    <p><span class="dia">Seg-Ter-Qui</span></p>
+                    <p class="nota">
+                        Esta é uma nota adicionada para esta rota pelo administrador. 
+                        Quaisquer informações aqui devem ser tomadas como observação.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
