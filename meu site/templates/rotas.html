@@ -20,11 +20,12 @@
         </ul>
     </aside>
 
-  
+    <!-- Conteúdo principal -->
     <main class="content">
         <header class="topbar">
             <h1>Rotas</h1>
-            <button class="btn-green">Add Rotas +</button>
+            <!-- Botão que abre o modal -->
+            <a href="#addRotas" class="btn-green">Add Rotas +</a>
         </header>
 
         <div class="searchbar">
@@ -57,7 +58,7 @@
 
             <div class="detalhes">
                 <div class="mapa">
-                    <img src="{{ url_for('static', filename='mapa_exemplo.png') }}" alt="Mapa da Rota">
+                    <img src="{{ url_for('static', filename='meuMapa.gif') }}" alt="Mapa da Rota">
                 </div>
                 <div class="info">
                     <h3>Rota 01</h3>
@@ -71,5 +72,28 @@
             </div>
         </section>
     </main>
+
+    <!-- Modal de Adicionar Rota -->
+    <div id="addRotas" class="modalAddRotas">
+        <div class="modalAddRotas-center">
+            <h1>Adicionar Rota</h1>
+
+            <input type="text" placeholder="Nome da Rota">
+                <div class="dias-semana">
+                        <label><input type="checkbox" name="dias" value="Segunda"> Segunda</label>
+                        <label><input type="checkbox" name="dias" value="Terça"> Terça</label>
+                        <label><input type="checkbox" name="dias" value="Quarta"> Quarta</label>
+                        <label><input type="checkbox" name="dias" value="Quinta"> Quinta</label>
+                        <label><input type="checkbox" name="dias" value="Sexta"> Sexta</label>
+                    </div>
+            <input type="text" placeholder="Origem">
+            <input type="text" placeholder="Destino">
+            <input type="text" placeholder="Motorista">
+
+            <button class="btn-blue">Salvar Rota</button>
+
+            <a href="#" class="close-button">X</a>
+        </div>
+    </div>
 </body>
 </html>

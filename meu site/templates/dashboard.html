@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard - ROTA+</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='grafico.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='graficos.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -12,12 +12,13 @@
     <div class="sidebar">
         <h2>ROTA+</h2>
         <ul>
-            <li>📊 Dashboard</li>
-            <li>👥 Alunos</li>
-            <li>🚐 Veículos</li>
-            <li>🛣 Rotas</li>
-            <li>💲 Despesas</li>
-            <li>⚙ Configurações</li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="#">Alunos</a></li>
+            <li class="active"><a href="/veiculos">Veículos</a></li>
+            <li><a href="#">Motorista</a></li>
+            <li><a href="/rotas">Rotas</a></li>
+            <li><a href="/despesas">Despesas</a></li>
+            <li><a href="#">Configurações</a></li>
         </ul>
     </div>
 

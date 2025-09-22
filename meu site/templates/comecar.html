@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - ROTA+</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='comecar.css') }}">
+</head>
+<body>
+        <header>
+            <a href="{{ url_for('index') }}" class="logo">
+                ROTA+
+            </a>
+        </header>
+
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <a href="/esqueceu-senha" class="forgot-password">Esqueceu a senha?</a>
+        </form>
+    </div>
+</body>
+</html>
