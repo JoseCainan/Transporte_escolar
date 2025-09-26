@@ -65,12 +65,6 @@ body {
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.btn-green:hover {
-    background: #208e3a;
-    transition: 0.3s;
 }
 
 /* Barra de busca */
@@ -112,12 +106,6 @@ body {
     background: #fff;
 }
 
-.card:hover {
-    border: 2px solid #0077cc;
-    background: #fff;
-    transition: 0.5s;
-}
-
 /* Detalhes */
 .detalhes {
     flex: 1;
@@ -138,148 +126,93 @@ body {
 }
 
 .motorista {
-    border: 1px solid #000000;
+    border: 1px solid #0077cc;
     padding: 8px;
     border-radius: 5px;
-    background: #fff;
+    background: #f0f8ff;
     display: inline-block;
 }
-
-.motorista:hover {
-    background: #0077cc;
-    color: #ffffff;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.modalAddveiculos {
+/* Fundo escuro do modal */
+.modal {
     display: none;
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.modalAddveiculos:target {
-    position: fixed;
-    top: 0;
+    z-index: 1000;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    
-    display: flex;
+    background: rgba(0,0,0,0.5);
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.4);
 }
 
-.modalAddveiculos h1 {
-    color: #000;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-.modalAddveiculos .modalAddveiculos-center {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    min-width: 300px;
-    max-width: 600px;
-}
-.modal-content-data {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    margin: 20px;
-}
-
-.modal-content-data .classeaddveiculo {
-    font-weight: normal;
-    margin-bottom: 0px;
-    font-size: 15px;
-}
-.modal-content-data .add-modal-container {
-    font-weight: normal;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    padding: 0;
+/* Caixa do modal */
+.modal-content {
     background: #fff;
-}
-
-.modal-content-data .add-modal-container input,
-.modal-content-data .add-modal-container select,
-.modal-content-data .add-modal-container textarea {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
-    background: #f9f9f9;
-    box-sizing: border-box;
-}
-
-.modal-content-data .add-modal-container input:focus,
-.modal-content-data .add-modal-container select:focus,
-.modal-content-data .add-modal-container textarea:focus {
-    border-color: #007bff;
-    background: #fff;
-}
-
-.modal-line {
-
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-right: 20px;
-    width: 1px;
-    background-color: #ccc;
-    transform: translateX(-50%);
-}
-
-.modal-content-column1 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 15px;
-    margin-right: 20px;
-}
-
-.modal-content-column2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 15px;
-}   
-
-.modal-content-data {
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s ease-in-out;
     position: relative;
 }
 
-.close-button {
+/* Animação suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Título */
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Inputs */
+.form-modal input,
+.form-modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Botões */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-cancel {
+    background: #ccc;
+    color: #333;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #bbb;
+}
+
+/* Fechar (X) */
+.close {
     position: absolute;
     top: 10px;
-    right: 10px;
-    padding: 8px 12px;
-    background-color: #ff0000;    
-    text-decoration: none;
-    font-size: 15px;
-    color: #f8f8f8;
-    border-radius: 10px;
-}
-.btn-blue {
-    background: #0077cc;
-    border: none;
-    margin-top: 28px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: white;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
+    color: #555;
+}
+
+.close:hover {
+    color: #000;
 }
