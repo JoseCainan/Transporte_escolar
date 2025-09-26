@@ -31,6 +31,11 @@ def rotas():
 def despesas():
     return render_template("despesas.html")
 
+@app.route('/comecar')
+def comecar():
+    return render_template('comecar.html')
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

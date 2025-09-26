@@ -135,3 +135,22 @@ body {
     cursor: pointer;
     margin-top: 10px;
 }
+
+.card {
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card.selected {
+    border: 2px solid #0077cc;
+    background: #fff;
+}
+
+/* Hover igual ao selected */
+.card:hover {
+    border: 2px solid #0077cc;
+    background: #fff;
+}
