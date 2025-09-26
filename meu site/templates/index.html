@@ -18,14 +18,15 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay">
-            <h1>O Jeito mais Inteligente <br> de Gerenciar o Transporte Escolar.</h1>
-            <div class="buttons">
-                <a href="/comecar" class="btn">Começar</a>
-                <a href="/login" class="btn-outline">Acessar Sistema</a>
+        <section class="hero">
+            <div class="overlay">
+                <h1>O Jeito mais Inteligente <br> de Gerenciar o Transporte Escolar.</h1>
+                <div class="buttons">
+                    <a href="{{ url_for('comecar') }}" class="btn">Começar</a>
+                    <a href="{{ url_for('login') }}" class="btn-outline">Acessar Sistema</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
 </body>
 </html>

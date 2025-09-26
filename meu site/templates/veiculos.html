@@ -23,8 +23,76 @@
     <main class="content">
         <header class="topbar">
             <h1>Veículos</h1>
-            <button class="btn-green">Adicionar Veículo +</button>
+            <a href="#addVeiculos" class="btn-green">Adicionar Veículo +</a>
+
+                 <div id="addVeiculos" class="modalAddveiculos">
+                    <div class="modalAddveiculos-center">   
+                        <h1 class="classeaddveiculo">Adicionar Veiculo</h2>
+                        <div class="modal-content">
+                            <div class="modal-content-data">  
+                                <div class="modal-content-column1">      
+                                    <h2 class="classeaddveiculo">Modelo do Veículo</h2>
+                                    <div class="add-modal-container">
+                                        <input type="text" name="modelo" placeholder="Digite o modelo">
+                                    </div>
+
+                                    <h2 class="classeaddveiculo">Placa</h2>
+                                    <div class="add-modal-container">
+                                        <input type="text" name="placa" placeholder="Digite a placa">
+                                    </div>
+
+                                    <h2 class="classeaddveiculo">Cor</h2>
+                                    <div class="add-modal-container">
+                                        <input type="text" name="cor" placeholder="Digite a cor">
+                                    </div>
+
+                                    <h2 class="classeaddveiculo">Quantidade de Assentos</h2>
+                                    <div class="add-modal-container">
+                                        <input type="number" name="assentos" placeholder="Ex: 5">
+                                    </div>
+                                </div>
+
+                                <div class="modal-line"></div>
+
+                                <div class="modal-content-column2">      
+                                    
+
+                                    <h2 class="classeaddveiculo">Ano de Fabricação</h2>
+                                    <div class="add-modal-container">
+                                        <input type="number" name="ano" placeholder="Ex: 2020">
+                                    </div>
+
+                                    <h2 class="classeaddveiculo">Tipo de Combustível</h2>
+                                    <div class="add-modal-container">
+                                        <select name="combustivel">
+                                            <option value="">Selecione</option>
+                                            <option value="gasolina">Gasolina</option>
+                                            <option value="alcool">Álcool</option>
+                                            <option value="diesel">Diesel</option>
+                                            <option value="flex">Flex</option>
+                                            <option value="eletrico">Elétrico</option>
+                                            <option value="hibrido">Híbrido</option>
+                                        </select>
+                                    </div>
+
+                                    <h2 class="classeaddveiculo">Motorista</h2>
+                                    <div class="add-modal-container">
+                                        <input type="text" name="motorista" placeholder="Nome do motorista">
+                                    </div>
+
+                                    <button class="btn-blue">Salvar Veiculo</button>
+                                </div>   
+                            </div>
+
+                        
+                            <a href="#" class = "close-button">X</a>
+                        </div>
+                    
+                   </div>
+                 </div>
+                        
         </header>
+        
 
         <div class="searchbar">
             <input type="text" placeholder="Pesquise por: Veículo ou Placa">
@@ -68,5 +136,7 @@
             </div>
         </section>
     </main>
+
+    
 </body>
 </html>

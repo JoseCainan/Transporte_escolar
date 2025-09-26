@@ -12,7 +12,7 @@ body {
 /* Navbar */
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     background-color: rgb(255, 255, 255);
@@ -23,20 +23,29 @@ header {
 }
 
 header .logo {
-    font-size: 22px;
+    font-size: 40px;
     font-weight: bold;
     color: #0077cc;
+
 }
 
 header nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: #000000;
+    font-weight: bold;
+    justify-content: space-around;
+
 }
 
 header nav a:hover {
-    color: #0077cc;
+    transition: 0.5s;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #0077cc;
+    border-radius: 20px;
+    font-weight: bold;
+    justify-content: space-around;
 }
 
 /* Hero Section */
@@ -48,7 +57,7 @@ header nav a:hover {
     justify-content: flex-start;
     padding-left: 80px;
     position: relative;
-    color: rgb(5, 2, 2);
+    color: #0077cc;
 }
 
 
