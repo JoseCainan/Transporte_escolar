@@ -1,0 +1,97 @@
+{
+  "alunos": 9999,
+  "novos_alunos": 120,
+  "escolas": 35,
+  "frequencia": [5, 9, 7, 10, 6],
+  "faltas": [2, 3, 4, 1, 5],
+  "rotas": [80, 15, 5],
+  
+  "despesas": [
+    {
+      "motorista": "Heitor Gabriel",
+      "rota": "Seg-Qua-Qui-Sex",
+      "veiculo": "Ônibus Mercedes - ROC4J23",
+      "total": 5000.00,
+      "periodo": "20/02 - 04/05",
+      "detalhes": [
+        "Ônibus Mercedes - ROC4J23 | Diesel | 20/02/2025",
+        "Ônibus Mercedes - ROC20L09 | Diesel | 04/05/2025"
+      ]
+    },
+    {
+      "motorista": "Filipe Mendes",
+      "rota": "Seg-Ter-Qua-Qui-Sex",
+      "veiculo": "Ônibus Mercedes - ROC20L09",
+      "total": 1500.00,
+      "periodo": "05/03 - 10/04",
+      "detalhes": [
+        "Ônibus Mercedes - ROC20L09 | Diesel | 05/03/2025"
+      ]
+    },
+    {
+      "motorista": "Betanny Alexandra",
+      "rota": "Seg-Qua-Sex",
+      "veiculo": "Ônibus Mercedes - ROC27J12",
+      "total": 2000.00,
+      "periodo": "01/04 - 15/05",
+      "detalhes": [
+        "Ônibus Mercedes - ROC27J12 | Diesel | 01/04/2025"
+      ]
+    }
+  ],
+
+  "rotas_detalhadas": [
+    {
+      "nome": "Rota01",
+      "dias": "Seg-Qua-Sex",
+      "trajeto": "Centro - Antenor Viana",
+      "motorista": "José Cainan",
+      "nota": "Sem observações Administradora: Laisa Torquato."
+    },
+    {
+      "nome": "Rota02",
+      "dias": "Seg-Ter-Qua-Qui-Sex",
+      "trajeto": "Vila Paraíso - IFMA",
+      "motorista": "Filipe Mendes",
+      "nota": "OBS: Rota com grande número de alunos -> Administrador: Marcony Henrique."
+    },
+    {
+      "nome": "Rota03",
+      "dias": "Seg-Ter-Qua",
+      "trajeto": "Cohab - IFMA",
+      "motorista": "Marcony Henrique",
+      "nota": "Atenção em dias de chuva -> Administrador: Bettany Alexandra."
+    }
+  ],
+  
+  "veiculos": [
+    {
+      "id": 1,
+      "modelo": "Ônibus Mercedes",
+      "placa": "ROC4J23",
+      "combustivel": "Diesel",
+      "data": "20/02/2025",
+      "observacoes": "Revisão feita recentemente, tudo ok.",
+      "motorista": "José Cainan"
+    },
+    {
+      "id": 2,
+      "modelo": "Van Escolar",
+      "placa": "XYZ9K88",
+      "combustivel": "Gasolina",
+      "data": "26/02/2025",
+      "observacoes": "Precisa trocar pneus dianteiros.",
+      "motorista": "Betanny alexandra"
+    },
+    {
+      "id": 3,
+      "modelo": "Ônibus Volvo",
+      "placa": "AAA1234",
+      "combustivel": "Diesel",
+      "data": "29/04/2025",
+      "observacoes": "Troca de óleo pendente.",
+      "motorista": "Filipe Mendes"
+    }
+  ]
+}
+
