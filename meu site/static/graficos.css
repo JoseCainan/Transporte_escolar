@@ -1,12 +1,13 @@
+/* Reset básico do body */
 body {
     display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
+    background: #ffffffc4;
 }
 
+/* Sidebar */
 .sidebar {
-    text-decoration: none;
     width: 220px;
     background: #1d1f27;
     color: #fff;
@@ -14,45 +15,39 @@ body {
 }
 
 .sidebar h2 {
-    text-decoration: none;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 30px;
-    text-decoration: none;
 }
 
 .sidebar ul {
-    text-decoration: none;
     list-style: none;
     padding: 0;
-    text-decoration: none;
 }
 
 .sidebar a {
     text-decoration: none;
     color: #fff;
     display: block;
-    text-decoration: none;
 }
+
 .sidebar ul li {
-    text-decoration: none;
     padding: 12px 20px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .sidebar ul li:hover {
-    text-decoration: none;
     background: #2e3240;
-    text-decoration: none;
 }
 
+/* Main content */
 .main {
     flex: 1;
     padding: 20px;
 }
 
+/* Cards */
 .cards {
     display: flex;
     gap: 20px;
@@ -60,34 +55,51 @@ body {
 }
 
 .card {
-    background: #eaeaea;
+    background: #fff;
     padding: 10px;
     border-radius: 8px;
+    border: 2px solid #fff;
     flex: 1;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.6s;
 }
 
 .card:hover {
-
-    border: 2px solid #0077cc;
-    background: #fff;
-    transition: 0.3s;
+    border-color: #0077cc;
 }
 
+/* Charts */
 .charts {
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .chart-box {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     padding: 15px;
     border-radius: 8px;
-    flex: 1;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
+.chart-box h3 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.chart-box canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#chart1 { flex: 2; }
+#chart2 { flex: 1; }
+
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -112,3 +124,98 @@ table th, table td {
 .status.finalizado { background-color: #4CAF50; }
 .status.emrota { background-color: #FFC107; color: #000; }
 .status.pendente { background-color: #F44336; }
+/* Filtros */
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* reduzido para otimizar espaço */
+    background-color: #f9f9f9;
+    padding: 10px 16px; /* padding menor */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 16px;
+}
+
+.filter > div {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0 6px; /* padding reduzido */
+    position: relative;
+}
+
+/* Linha vertical entre itens */
+.filter > div:not(:first-child) {
+    border-left: 1px solid #ccc;
+    padding-left: 12px; /* deixa espaço entre linha e conteúdo */
+}
+
+/* Ícone do filtro */
+.icon-img-filter {
+    width: 32px; /* um pouco menor */
+    height: 32px;
+}
+
+/* Datas */
+.filter-date {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; /* gap menor */
+}
+
+.date-item {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.date-label {
+    font-size: 10px;
+    color: #666;
+    width: 100%;
+    font-weight: 500;
+}
+
+.date-item input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 4px 0; /* padding menor */
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: #000;
+    width: 150px; /* largura reduzida */
+    cursor: pointer;
+    align-items: center;
+}
+
+.date-item input[type="date"]:focus {
+    outline: none;
+}
+
+/* Select de rota */
+.filter-route select {
+    padding: 4px 0; /* padding menor */
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto; /* ocupa só o necessário */
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .filter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    .filter > div:not(:first-child) {
+        border-left: none;
+        border-top: 1px solid #ccc;
+        padding-top: 12px;
+    }
+}

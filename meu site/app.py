@@ -2,21 +2,14 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/index")
+@app.route("/")
 def index():
     return render_template("index.html")
 
 @app.route("/dashboard")
 def dashboard():
-    dados = {
-        "alunos": 9999,
-        "novos_alunos": 120,
-        "escolas": 35,
-        "frequencia": [5, 9, 7, 10, 6],   
-        "faltas": [2, 3, 4, 1, 5],        
-        "rotas": [80, 15, 5]              
-    }
-    return render_template("dashboard.html", dados=dados)
+    # Não precisa carregar JSON aqui, o HTML vai buscar direto via fetch
+    return render_template("dashboard.html")
 
 @app.route("/veiculos")
 def veiculos():
@@ -25,7 +18,6 @@ def veiculos():
 @app.route("/rotas")
 def rotas():
     return render_template("rotas.html")
-
 
 @app.route("/despesas")
 def despesas():
@@ -38,8 +30,6 @@ def comecar():
 @app.route('/login')
 def login():
     return render_template('subtelas/login.html')
-
-
 
 if __name__ == "__main__":
     app.run(debug=True)

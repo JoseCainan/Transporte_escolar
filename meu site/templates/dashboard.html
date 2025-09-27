@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+    <!-- Sidebar -->
     <div class="sidebar">
         <h2>ROTA+</h2>
         <ul>
@@ -22,30 +22,54 @@
         </ul>
     </div>
 
+    <!-- Main Content -->
     <div class="main">
+
+        <!-- Filtros -->
+        <div class="filter">
+            <div>
+                <img class="icon-img-filter" src="https://img.icons8.com/pastel-glyph/64/filter.png" alt="Filtro">
+            </div>
+            <div class="filter-date">
+                <div class="date-item">
+                    <label class="date-label" for="start-date">Início: </label>
+                    <input type="date" id="start-date">
+                </div>
+                <div class="date-item">
+                    <label class="date-label" for="end-date">Fim: </label>
+                    <input type="date" id="end-date">
+                </div>
+            </div>
+            <div class="filter-route">
+                <select id="route">
+                    <option value="all">Todas as Rotas</option>
+                </select>
+            </div>
+        </div>
+
         <!-- Cards -->
         <div class="cards">
             <div class="card">
-                <h3>{{ dados.alunos }}</h3>
+                <h3 id="card-alunos">0</h3>
                 <p>Quantidade de Alunos</p>
             </div>
             <div class="card">
-                <h3>{{ dados.novos_alunos }}</h3>
+                <h3 id="card-novos">0</h3>
                 <p>Novos Alunos</p>
             </div>
             <div class="card">
-                <h3>{{ dados.escolas }}</h3>
+                <h3 id="card-escolas">0</h3>
                 <p>Número de Escolas</p>
             </div>
         </div>
 
         <!-- Gráficos -->
         <div class="charts">
-            <div class="chart-box">
+            <div class="chart-box" id="chart1">
                 <h3>Frequência Geral</h3>
                 <canvas id="graficoLinha"></canvas>
             </div>
-            <div class="chart-box">
+            <div class="chart-box" id="chart2">
                 <h3>Trânsito de Rotas</h3>
                 <canvas id="graficoPizza"></canvas>
             </div>
@@ -63,58 +87,154 @@
                     <th>Status</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>A</td>
-                    <td>6065 MaryJane Landing</td>
-                    <td>12/08/2019</td>
-                    <td>423</td>
-                    <td><span class="status finalizado">Finalizado</span></td>
-                </tr>
-                <tr>
-                    <td>B</td>
-                    <td>6065 MaryJane Landing</td>
-                    <td>12/08/2019</td>
-                    <td>423</td>
-                    <td><span class="status emrota">Em Rota</span></td>
-                </tr>
-                <tr>
-                    <td>C</td>
-                    <td>6065 MaryJane Landing</td>
-                    <td>12/08/2019</td>
-                    <td>423</td>
-                    <td><span class="status pendente">Pendente</span></td>
-                </tr>
-            </tbody>
+            <tbody id="tabela-detalhes"></tbody>
         </table>
     </div>
 
+    <!-- Scripts -->
     <script>
-        const frequencia = {{ dados.frequencia | safe }};
-        const faltas = {{ dados.faltas | safe }};
-        const rotas = {{ dados.rotas | safe }};
+        let dadosGlobais = null;
+        let chartLinha = null;
+        let chartPizza = null;
 
-        new Chart(document.getElementById("graficoLinha"), {
-            type: "line",
-            data: {
-                labels: ["Seg", "Ter", "Qua", "Qui", "Sex"],
-                datasets: [
-                    { label: "Presenças", data: frequencia, borderColor: "green", fill: false },
-                    { label: "Faltas", data: faltas, borderColor: "red", fill: false }
-                ]
-            }
-        });
+        async function carregarDados() {
+            const response = await fetch("/static/data/dashboard_dados_50.json");
+            dadosGlobais = await response.json();
 
-        new Chart(document.getElementById("graficoPizza"), {
-            type: "doughnut",
-            data: {
-                labels: ["Finalizado", "Em Rota", "Não Iniciado"],
-                datasets: [{
-                    data: rotas,
-                    backgroundColor: ["#4CAF50", "#FFC107", "#F44336"]
-                }]
+            // Preencher rotas
+            const rotaSelect = document.getElementById("route");
+            dadosGlobais.filtros.rotas.forEach(r => {
+                const option = document.createElement("option");
+                option.value = r.nome;
+                option.textContent = r.nome;
+                rotaSelect.appendChild(option);
+            });
+
+            atualizarDashboard();
+        }
+
+        function normalizarStatus(status) {
+            switch (status) {
+                case "Em Rota": return "emrota";
+                case "Finalizado": return "finalizado";
+                case "Pendente": return "pendente";
+                default: return status.toLowerCase().replace(/\s+/g, "");
             }
-        });
+        }
+
+        function atualizarDashboard() {
+            const dataInicio = document.getElementById("start-date").value;
+            const dataFim = document.getElementById("end-date").value;
+            const rotaSelecionada = document.getElementById("route").value;
+
+            let registros = dadosGlobais.registros;
+
+            if (dataInicio && dataFim) {
+                const inicio = new Date(dataInicio);
+                const fim = new Date(dataFim);
+
+                if (fim < inicio) {
+                    alert("A data final não pode ser menor que a data inicial.");
+                    document.getElementById("end-date").value = "";
+                    return;
+                }
+
+                const diffDias = (fim - inicio) / (1000 * 3600 * 24);
+                if (diffDias > 7) {
+                    alert("O período máximo é de 7 dias.");
+                    document.getElementById("end-date").value = "";
+                    return;
+                }
+
+                registros = registros.filter(r => {
+                    const data = new Date(r.data);
+                    return data >= inicio && data <= fim;
+                });
+            } else if (dataInicio) {
+                registros = registros.filter(r => r.data === dataInicio);
+            }
+
+            if (rotaSelecionada !== "all") {
+                registros = registros.filter(r => r.rota === rotaSelecionada);
+            }
+
+            // === Atualizar Cards ===
+            document.getElementById("card-alunos").textContent = dadosGlobais.alunos.length;
+            document.getElementById("card-escolas").textContent = dadosGlobais.filtros.escolas.length;
+            document.getElementById("card-novos").textContent = registros.length;
+
+            // === Atualizar Gráfico Linha ===
+            const labels = registros.map(r => r.dia_semana);
+            const presencas = registros.map(r => r.presencas);
+            const faltas = registros.map(r => r.faltas);
+
+            if (chartLinha) chartLinha.destroy();
+            chartLinha = new Chart(document.getElementById("graficoLinha"), {
+                type: "line",
+                data: {
+                    labels,
+                    datasets: [
+                        {
+                            label: "Presenças",
+                            data: presencas,
+                            borderColor: "green",
+                            backgroundColor: "rgba(0, 255, 0, 0.1)",
+                            fill: true,
+                            tension: 0.3
+                        },
+                        {
+                            label: "Faltas",
+                            data: faltas,
+                            borderColor: "red",
+                            backgroundColor: "rgba(255, 0, 0, 0.3)",
+                            fill: true,
+                            tension: 0.3
+                        }
+                    ]
+                }
+            });
+
+            // === Atualizar Gráfico Pizza ===
+            const statusCount = { "Finalizado": 0, "Em Rota": 0, "Pendente": 0 };
+            registros.forEach(r => { 
+                if (statusCount[r.status] !== undefined) {
+                    statusCount[r.status]++;
+                }
+            });
+
+            if (chartPizza) chartPizza.destroy();
+            chartPizza = new Chart(document.getElementById("graficoPizza"), {
+                type: "doughnut",
+                data: {
+                    labels: Object.keys(statusCount),
+                    datasets: [{
+                        data: Object.values(statusCount),
+                        backgroundColor: ["#4CAF50", "#FFC107", "#F44336"]
+                    }]
+                }
+            });
+
+            // === Preencher tabela ===
+            const tabela = document.getElementById("tabela-detalhes");
+            tabela.innerHTML = "";
+            registros.forEach(r => {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td>${r.motorista}</td>
+                    <td>${r.rota}</td>
+                    <td>${r.data}</td>
+                    <td>${r.qtd_passageiros}</td>
+                    <td><span class="status ${normalizarStatus(r.status)}">${r.status}</span></td>
+                `;
+                tabela.appendChild(tr);
+            });
+        }
+
+        document.getElementById("start-date").addEventListener("change", atualizarDashboard);
+        document.getElementById("end-date").addEventListener("change", atualizarDashboard);
+        document.getElementById("route").addEventListener("change", atualizarDashboard);
+
+        carregarDados();
     </script>
 </body>
 </html>
