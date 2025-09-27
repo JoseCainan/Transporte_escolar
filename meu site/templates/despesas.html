@@ -20,16 +20,14 @@
         </ul>
     </aside>
 
-    <!-- Conteúdo -->
     <main class="content">
         <header class="topbar">
             <h1>Despesas</h1>
             <button class="btn-green">Soma das Despesas</button>
         </header>
 
-        <!-- Filtros -->
         <div class="filters">
-            <button>Data V</button>
+            <button>Data ⌄</button>
             <button>Rota ⌄</button>
             <button>Veículo ⌄</button>
             <button>Motorista ⌄</button>
@@ -37,49 +35,59 @@
         </div>
 
         <section class="container">
-            <!-- Lista -->
             <div class="lista">
-                <div class="card selected">
-                    <h3>Heitor Gabriel <span>Total R$ 5000.00</span></h3>
-                    <p>Seg-Qua-Qui-Sex</p>
-                    <p>Ônibus Mercedes - ROC4J23</p>
+                {% for d in despesas %}
+                <div class="card {% if loop.first %}selected{% endif %}"
+                     data-motorista="{{ d.motorista }}"
+                     data-rota="{{ d.rota }}"
+                     data-veiculo="{{ d.veiculo }}"
+                     data-total="{{ d.total }}"
+                     data-periodo="{{ d.periodo }}"
+                     data-detalhes="{{ d.detalhes | join(', ') }}">
+                    <h3>{{ d.motorista }} <span>Total R$ {{ d.total }}</span></h3>
+                    <p>{{ d.rota }}</p>
+                    <p>{{ d.veiculo }}</p>
                 </div>
-
-                <div class="card">
-                    <h3>Filipe Mendes <span>Total R$ 1500.00</span></h3>
-                    <p>Seg-Ter-Qua-Qui-Sex</p>
-                    <p>Ônibus Mercedes - ROC20L09</p>
-                </div>
-
-                <div class="card">
-                    <h3>Betanny Alexandra <span>Total R$ 2000.00</span></h3>
-                    <p>Seg-Qua-Sex</p>
-                    <p>Ônibus Mercedes - ROC27J12</p>
-                </div>
+                {% endfor %}
             </div>
 
-            <!-- Detalhes -->
             <div class="detalhes">
                 <div class="box">
-                    <h3>Heitor Gabriel</h3>
-                    <p>Ônibus Mercedes ROC-4J23</p>
-                    <p>20/02 - 04/05 ✎</p>
-                    <p><strong>Total R$ 3000.00</strong></p>
+                    <h3 id="desp-motorista">Selecione uma despesa</h3>
+                    <p id="desp-veiculo"></p>
+                    <p id="desp-periodo"></p>
+                    <p><strong id="desp-total"></strong></p>
                     <button class="btn-yellow">Comprovantes</button>
                 </div>
 
-                <h2>Ônibus</h2>
-                <div class="box">
-                    <p>Ônibus Mercedes - ROC4J23</p>
-                    <p>Diesel | 20/02/2025</p>
-                </div>
-
-                <div class="box">
-                    <p>Ônibus Mercedes - ROC20L09</p>
-                    <p>Diesel | 04/05/2025</p>
-                </div>
+                <h2>Veículos</h2>
+                <div id="desp-detalhes"></div>
             </div>
         </section>
     </main>
+
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+
+                document.getElementById('desp-motorista').textContent = card.dataset.motorista;
+                document.getElementById('desp-veiculo').textContent = card.dataset.veiculo;
+                document.getElementById('desp-periodo').textContent = card.dataset.periodo;
+                document.getElementById('desp-total').textContent = "Total R$ " + card.dataset.total;
+
+                const detalhes = card.dataset.detalhes ? card.dataset.detalhes.split(",") : [];
+                const container = document.getElementById('desp-detalhes');
+                container.innerHTML = "";
+                detalhes.forEach(det => {
+                    const box = document.createElement("div");
+                    box.className = "box";
+                    box.innerHTML = `<p>${det.trim()}</p>`;
+                    container.appendChild(box);
+                });
+            });
+        });
+    </script>
 </body>
 </html>

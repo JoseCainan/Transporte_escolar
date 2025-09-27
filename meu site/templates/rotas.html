@@ -20,13 +20,39 @@
         </ul>
     </aside>
 
-    <!-- Conteúdo principal -->
     <main class="content">
         <header class="topbar">
             <h1>Rotas</h1>
-            <!-- Botão que abre o modal -->
-            <a href="#addRotas" class="btn-green">Add Rotas +</a>
+            <button id="btnAddRota" class="btn-green">Adicionar Rota +</button>
         </header>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Adicionar Rota</h2>
+                <form action="/adicionar_rota" method="POST" class="form-modal">
+                    <label>Nome da Rota:</label>
+                    <input type="text" name="nome" required>
+
+                    <label>Itinerário:</label>
+                    <input type="text" name="itinerario" required>
+
+                    <label>Dias:</label>
+                    <input type="text" name="dias" placeholder="Ex: Seg-Qua-Sex" required>
+
+                    <label>Motorista:</label>
+                    <input type="text" name="motorista" required>
+
+                    <label>Nota:</label>
+                    <textarea name="nota"></textarea>
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn-cancel" id="btnCancel">Cancelar</button>
+                        <button type="submit" class="btn-green">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div class="searchbar">
             <input type="text" placeholder="Pesquise por: Local ou Motoristas">
@@ -34,66 +60,60 @@
 
         <section class="container">
             <div class="lista">
-                <div class="card selected">
-                    <h3>Rota01 <span class="dia">Seg-Qua-Sex</span></h3>
-                    <p>Centro - Antenor Viana</p>
-                    <p><strong>Heitor Gabriel</strong></p>
-                    <button class="btn-small">Editar</button>
+                {% for rota in rotas %}
+                <div class="card" 
+                    data-nome="{{ rota.nome }}" 
+                    data-itinerario="{{ rota.itinerario }}"
+                    data-dias="{{ rota.dias }}"
+                    data-motorista="{{ rota.motorista }}"
+                    data-nota="{{ rota.nota }}">
+                    <h3>{{ rota.nome }} <span class="dia">{{ rota.dias }}</span></h3>
+                    <p>{{ rota.itinerario }}</p>
+                    <p><strong>{{ rota.motorista }}</strong></p>
                 </div>
-
-                <div class="card">
-                    <h3>Rota02 <span class="dia">Seg-Ter-Qua-Qui-Sex</span></h3>
-                    <p>Vila Paraíso - IFMA</p>
-                    <p><strong>Filipe Mendes</strong></p>
-                    <button class="btn-small">Editar</button>
-                </div>
-
-                <div class="card">
-                    <h3>Rota03 <span class="dia">Seg-Ter-Qua</span></h3>
-                    <p>Cohab - IFMA</p>
-                    <p><strong>Marcony Henrique</strong></p>
-                    <button class="btn-small">Editar</button>
-                </div>
+                {% endfor %}
             </div>
 
             <div class="detalhes">
                 <div class="mapa">
-                    <img src="{{ url_for('static', filename='meuMapa.gif') }}" alt="Mapa da Rota">
+                    <img src="{{ url_for('static', filename='mapa_exemplo.png') }}" alt="Mapa da Rota">
                 </div>
                 <div class="info">
-                    <h3>Rota 01</h3>
-                    <p>Centro - Antenor Viana</p>
-                    <p><span class="dia">Seg-Ter-Qui</span></p>
-                    <p class="nota">
-                        Esta é uma nota adicionada para esta rota pelo administrador. 
-                        Quaisquer informações aqui devem ser tomadas como observação.
-                    </p>
+                    <h3 id="rota-nome">Selecione uma rota</h3>
+                    <p id="rota-itinerario"></p>
+                    <p><span class="dia" id="rota-dias"></span></p>
+                    <p class="nota" id="rota-nota"></p>
+                    <p><strong id="rota-motorista"></strong></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Modal de Adicionar Rota -->
-    <div id="addRotas" class="modalAddRotas">
-        <div class="modalAddRotas-center">
-            <h1>Adicionar Rota</h1>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
 
-            <input type="text" placeholder="Nome da Rota">
-                <div class="dias-semana">
-                        <label><input type="checkbox" name="dias" value="Segunda"> Segunda</label>
-                        <label><input type="checkbox" name="dias" value="Terça"> Terça</label>
-                        <label><input type="checkbox" name="dias" value="Quarta"> Quarta</label>
-                        <label><input type="checkbox" name="dias" value="Quinta"> Quinta</label>
-                        <label><input type="checkbox" name="dias" value="Sexta"> Sexta</label>
-                    </div>
-            <input type="text" placeholder="Origem">
-            <input type="text" placeholder="Destino">
-            <input type="text" placeholder="Motorista">
+                document.getElementById('rota-nome').textContent = card.dataset.nome;
+                document.getElementById('rota-itinerario').textContent = card.dataset.itinerario;
+                document.getElementById('rota-dias').textContent = card.dataset.dias;
+                document.getElementById('rota-motorista').textContent = card.dataset.motorista;
+                document.getElementById('rota-nota').textContent = card.dataset.nota || "Sem observações.";
+            });
+        });
 
-            <button class="btn-blue">Salvar Rota</button>
+        const modal = document.getElementById("modal");
+        const btn = document.getElementById("btnAddRota");
+        const span = document.querySelector(".close");
+        const cancelBtn = document.getElementById("btnCancel");
 
-            <a href="#" class="close-button">X</a>
-        </div>
-    </div>
+        btn.onclick = () => modal.style.display = "flex";
+        span.onclick = () => modal.style.display = "none";
+        cancelBtn.onclick = () => modal.style.display = "none";
+        window.onclick = (event) => {
+            if (event.target == modal) modal.style.display = "none";
+        };
+    </script>
 </body>
 </html>
