@@ -14,11 +14,9 @@ def carregar_dados():
 def index():
     return render_template("index.html")
 
-@app.route("/alunos")
+@app.route('/alunos')
 def alunos():
-    with open("dados.json", "r", encoding="utf-8") as f:
-        dados = json.load(f)
-    return render_template("alunos.html", escolas=dados.get("escolas", []))
+    return render_template('alunos.html')
 
 @app.route("/alunos/<nome_escola>")
 def alunos_por_escola(nome_escola):
@@ -57,6 +55,27 @@ def adicionar_escola():
 
     return redirect("/alunos")
 
+@app.route("/adicionar_motorista", methods=["POST"])
+def adicionar_motorista():
+    caminho = os.path.join(app.root_path, "data", "dados.json")
+    with open(caminho, "r", encoding="utf-8") as f:
+        dados = json.load(f)
+
+    novo = {
+        "nome": request.form["nome"],
+        "telefone": request.form["telefone"],
+        "cnh": request.form["cnh"],
+        "categoria": request.form["categoria"],
+        "status": request.form["status"]
+    }
+
+    dados.setdefault("motoristas", []).append(novo)
+    with open(caminho, "w", encoding="utf-8") as f:
+        json.dump(dados, f, ensure_ascii=False, indent=4)
+
+    return redirect("/motoristas")
+
+
 @app.route("/dashboard")
 def dashboard():
     dados = carregar_dados()
@@ -76,6 +95,13 @@ def rotas():
 def despesas():
     dados = carregar_dados()
     return render_template("despesas.html", despesas=dados["despesas"])
+
+@app.route("/motoristas")
+def motoristas():
+    with open(os.path.join(app.root_path, "data", "dados.json"), "r", encoding="utf-8") as f:
+        dados = json.load(f)
+    return render_template("motoristas.html", motoristas=dados.get("motoristas", []))
+
 
 if __name__ == "__main__":
     app.run(debug=True)

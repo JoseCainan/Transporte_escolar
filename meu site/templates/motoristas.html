@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoristas - ROTA+</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='motoristas.css') }}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>ROTA+</h2>
+            <ul>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/alunos">Alunos</a></li>
+                <li><a href="/veiculos">Veículos</a></li>
+                <li class="active"><a href="/motoristas">Motorista</a></li>
+                <li><a href="/rotas">Rotas</a></li>
+                <li><a href="/despesas">Despesas</a></li>
+                <li><a href="/config">Configurações</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Motoristas</h1>
+                <button class="add-btn">+ Add Motoristas</button>
+            </header>
+
+            <div class="content">
+                <div class="motoristas-list">
+                    <input type="text" id="search" placeholder="Pesquise por motoristas...">
+                    <div id="lista-motoristas"></div>
+                </div>
+
+                <div class="motorista-detalhes" id="detalhes">
+                    <h2>Selecione um motorista</h2>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const motoristas = [
+            {
+                nome: "Heitor Gabriel",
+                dias: "Seg-Qua-Qui-Sex",
+                veiculo: "Ônibus Mercedes - ROC4J23",
+                rotas: [
+                    { nome: "Rota 07", desc: "Cohab - IFMA", dias: "Seg-Qua-Qui", veiculo: "ROC4J23" },
+                    { nome: "Rota 08", desc: "Vila Paraíso - Centro", dias: "Qua-Sex-Sab", veiculo: "ROC4J23" },
+                    { nome: "Rota 10", desc: "Cabgaleiros - IFMA", dias: "Ter-Qua-Qui", veiculo: "ROC4J23" }
+                ]
+            },
+            {
+                nome: "Filipe Mendes",
+                dias: "Seg-Ter-Qua-Qui-Sex",
+                veiculo: "Ônibus Mercedes - ROC20L09",
+                rotas: [
+                    { nome: "Rota 02", desc: "Nova Caxias - IFMA", dias: "Seg-Qua", veiculo: "ROC20L09" },
+                    { nome: "Rota 05", desc: "Centro - Pirajá", dias: "Ter-Qui", veiculo: "ROC20L09" }
+                ]
+            },
+            {
+                nome: "Betanny Alexandra",
+                dias: "Seg-Qua-Sex",
+                veiculo: "Ônibus Mercedes - ROC27J12",
+                rotas: [
+                    { nome: "Rota 11", desc: "Trizidela - Centro", dias: "Seg-Sex", veiculo: "ROC27J12" }
+                ]
+            }
+        ];
+
+        const lista = document.getElementById('lista-motoristas');
+        const detalhes = document.getElementById('detalhes');
+
+        // Renderizar lista
+        motoristas.forEach((m, i) => {
+            const card = document.createElement('div');
+            card.className = 'motorista-card';
+            card.innerHTML = `
+                <h3>${m.nome}</h3>
+                <p>📅 ${m.dias}</p>
+                <p>🚌 ${m.veiculo}</p>
+                <button class="editar">Editar</button>
+            `;
+            card.onclick = () => mostrarDetalhes(i);
+            lista.appendChild(card);
+        });
+
+        // Atualizar painel direito
+        function mostrarDetalhes(index) {
+            const m = motoristas[index];
+            detalhes.innerHTML = `
+                <div class="painel">
+                    <h2>${m.nome}</h2>
+                    <p>🚌 ${m.veiculo}</p>
+                    <button class="alterar">Alterar veículo</button>
+
+                    <h3>Rotas</h3>
+                    <div class="rotas">
+                        ${m.rotas.map(r => `
+                            <div class="rota-card">
+                                <h4>${r.nome}</h4>
+                                <p>${r.desc}</p>
+                                <p>📅 ${r.dias}</p>
+                                <p>🚌 ${r.veiculo}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+
+            // destaca motorista ativo
+            document.querySelectorAll('.motorista-card').forEach(el => el.classList.remove('ativo'));
+            document.querySelectorAll('.motorista-card')[index].classList.add('ativo');
+        }
+    </script>
+</body>
+</html>

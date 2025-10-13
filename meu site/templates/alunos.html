@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ROTA+ | Alunos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='alunos.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">ROTA+</div>
+        <ul>
+            <li><a href="/dashboard">📊 Dashboard</a></li>
+            <li class="active"><a href="/alunos">👥 Alunos</a></li>
+            <li><a href="/veiculos">🚐 Veículos</a></li>
+            <li><a href="/motoristas">🧑‍✈️ Motoristas</a></li>
+            <li><a href="/rotas">🛣 Rotas</a></li>
+            <li><a href="/despesas">💲 Despesas</a></li>
+            <li><a href="#">⚙️ Configurações</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <!-- Cabeçalho -->
+        <header class="topbar">
+            <h1>Alunos</h1>
+            <div class="actions">
+                <button class="btn-filter">Filtrar ⏷</button>
+                <button class="btn-green">Adicionar Escola +</button>
+            </div>
+        </header>
+
+        <!-- Estatísticas -->
+        <section class="stats">
+            <div class="stat-box">
+                <p>👥</p>
+                <h3>9999</h3>
+                <span>Quantidade de Alunos</span>
+            </div>
+            <div class="stat-box">
+                <p>🛣</p>
+                <h3>100</h3>
+                <span>Média por Rota</span>
+            </div>
+            <div class="stat-box">
+                <p>🏫</p>
+                <h3>100</h3>
+                <span>Média por Escola</span>
+            </div>
+        </section>
+
+        <!-- Pesquisa e Tabela -->
+        <section class="data-section">
+            <div class="left">
+                <input type="text" class="search" placeholder="Pesquisar Escolas...">
+                <div class="escolas-lista">
+                    {% for escola in escolas %}
+                    <div class="escola-card" onclick="mostrarEscola('{{ escola.nome }}')">
+                        <span>{{ escola.nome }}</span>
+                        <button class="btn-ver">Ver</button>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="tabela-container">
+                    <h3 id="tituloEscola">Escola I</h3>
+                    <input type="text" class="search" placeholder="Pesquisar Aluno...">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aluno</th>
+                                <th>Rota</th>
+                                <th>Qtd. de Passageiros</th>
+                                <th>Status Rota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaAlunos">
+                            {% for aluno in alunos %}
+                            <tr>
+                                <td>{{ aluno.nome }}</td>
+                                <td>{{ aluno.rota }}</td>
+                                <td>{{ aluno.qtd_passageiros }}</td>
+                                <td><span class="status {{ aluno.status|lower }}">{{ aluno.status }}</span></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function mostrarEscola(nome) {
+            document.getElementById("tituloEscola").textContent = nome;
+        }
+    </script>
+</body>
+</html>

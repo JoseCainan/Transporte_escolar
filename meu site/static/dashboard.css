@@ -1,0 +1,169 @@
+/* ======= Layout ======= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #1d1f27;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidebar ul li.active, 
+.sidebar ul li:hover {
+    background: #2e3240;
+}
+
+/* ======= Conteúdo Principal ======= */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* ======= Cards ======= */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #fff;
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.card p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ======= Gráficos ======= */
+.charts {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.chart-box {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-box h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.chart-box canvas {
+    max-width: 350px;   /* largura máxima */
+    max-height: 250px;  /* altura máxima */
+    margin: 0 auto;     /* centraliza no box */
+    display: block;
+}
+
+.charts {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around; /* distribui melhor */
+    flex-wrap: wrap; /* se a tela for pequena, quebra linha */
+}
+
+.chart-box {
+    flex: 1;
+    max-width: 400px; /* controla o tamanho do box */
+}
+
+
+/* ======= Tabela ======= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #fafafa;
+}
+
+/* ======= Status ======= */
+.status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.status.finalizado {
+    background-color: #4CAF50;
+}
+
+.status.emrota {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.status.pendente {
+    background-color: #F44336;
+}
