@@ -5,6 +5,11 @@ from flask import Flask, render_template, request, redirect, jsonify
 
 app = Flask(__name__)
 
+def carregar_dados():
+    caminho = os.path.join(app.root_path, "data", "dados.json")
+    with open(caminho, "r", encoding="utf-8") as f:
+        return json.load(f)
+
 @app.route("/")
 def index():
     return render_template("index.html")
