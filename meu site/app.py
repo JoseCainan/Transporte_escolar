@@ -5,11 +5,6 @@ from flask import Flask, render_template, request, redirect, jsonify
 
 app = Flask(__name__)
 
-def carregar_dados():
-    caminho = os.path.join(app.root_path, "data", "dados.json")
-    with open(caminho, "r", encoding="utf-8") as f:
-        return json.load(f)
-
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -78,8 +73,8 @@ def adicionar_motorista():
 
 @app.route("/dashboard")
 def dashboard():
-    dados = carregar_dados()
-    return render_template("dashboard.html", dados=dados)
+    # Não precisa carregar JSON aqui, o HTML vai buscar direto via fetch
+    return render_template("dashboard.html")
 
 @app.route("/veiculos")
 def veiculos():
@@ -88,13 +83,20 @@ def veiculos():
 
 @app.route("/rotas")
 def rotas():
-    dados = carregar_dados()
-    return render_template("rotas.html", rotas=dados["rotas_detalhadas"])
+    return render_template("rotas.html")
 
 @app.route("/despesas")
 def despesas():
-    dados = carregar_dados()
-    return render_template("despesas.html", despesas=dados["despesas"])
+    return render_template("despesas.html")
+
+@app.route('/comecar')
+def comecar():
+    return render_template('comecar.html')
+
+@app.route('/login')
+def login():
+    return render_template('subtelas/login.html')
+
 
 @app.route("/motoristas")
 def motoristas():

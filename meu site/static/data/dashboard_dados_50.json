@@ -1,0 +1,4003 @@
+{
+    "filtros": {
+        "datas": {
+            "min": "2025-08-07",
+            "max": "2025-09-26"
+        },
+        "rotas": [
+            {
+                "id": "route1",
+                "nome": "Rota 1 - Centro"
+            },
+            {
+                "id": "route2",
+                "nome": "Rota 2 - Zona Norte"
+            },
+            {
+                "id": "route3",
+                "nome": "Rota 3 - Zona Sul"
+            },
+            {
+                "id": "route4",
+                "nome": "Rota 4 - Zona Leste"
+            },
+            {
+                "id": "route5",
+                "nome": "Rota 5 - Zona Oeste"
+            }
+        ],
+        "escolas": [
+            "Colégio Brasil",
+            "Escola Modelo",
+            "Escola Futuro",
+            "Instituto Alpha",
+            "Centro Educacional Beta"
+        ],
+        "status": [
+            "Finalizado",
+            "Em Rota",
+            "Pendente"
+        ],
+        "motoristas": [
+            "Carlos Silva",
+            "Fernanda Santos",
+            "João Pereira",
+            "Ricardo Almeida",
+            "Patrícia Gomes"
+        ]
+    },
+    "alunos": [
+        {
+            "id": 1,
+            "nome": "Aluno 1",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 2,
+            "nome": "Aluno 2",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 3,
+            "nome": "Aluno 3",
+            "escola": "Escola Modelo",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 4,
+            "nome": "Aluno 4",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 5,
+            "nome": "Aluno 5",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 6,
+            "nome": "Aluno 6",
+            "escola": "Escola Futuro",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 7,
+            "nome": "Aluno 7",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 8,
+            "nome": "Aluno 8",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 9,
+            "nome": "Aluno 9",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 10,
+            "nome": "Aluno 10",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 11,
+            "nome": "Aluno 11",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 12,
+            "nome": "Aluno 12",
+            "escola": "Escola Futuro",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 13,
+            "nome": "Aluno 13",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 14,
+            "nome": "Aluno 14",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 15,
+            "nome": "Aluno 15",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 16,
+            "nome": "Aluno 16",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 17,
+            "nome": "Aluno 17",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 18,
+            "nome": "Aluno 18",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 19,
+            "nome": "Aluno 19",
+            "escola": "Escola Futuro",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 20,
+            "nome": "Aluno 20",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 21,
+            "nome": "Aluno 21",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 22,
+            "nome": "Aluno 22",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 23,
+            "nome": "Aluno 23",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 24,
+            "nome": "Aluno 24",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 25,
+            "nome": "Aluno 25",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 26,
+            "nome": "Aluno 26",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 27,
+            "nome": "Aluno 27",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 28,
+            "nome": "Aluno 28",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 29,
+            "nome": "Aluno 29",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 30,
+            "nome": "Aluno 30",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 31,
+            "nome": "Aluno 31",
+            "escola": "Escola Modelo",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 32,
+            "nome": "Aluno 32",
+            "escola": "Escola Futuro",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 33,
+            "nome": "Aluno 33",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 34,
+            "nome": "Aluno 34",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 35,
+            "nome": "Aluno 35",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 36,
+            "nome": "Aluno 36",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 37,
+            "nome": "Aluno 37",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 38,
+            "nome": "Aluno 38",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 39,
+            "nome": "Aluno 39",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 40,
+            "nome": "Aluno 40",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 41,
+            "nome": "Aluno 41",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 42,
+            "nome": "Aluno 42",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 43,
+            "nome": "Aluno 43",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 44,
+            "nome": "Aluno 44",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 45,
+            "nome": "Aluno 45",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 46,
+            "nome": "Aluno 46",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 47,
+            "nome": "Aluno 47",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 48,
+            "nome": "Aluno 48",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 49,
+            "nome": "Aluno 49",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 50,
+            "nome": "Aluno 50",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 51,
+            "nome": "Aluno 51",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 52,
+            "nome": "Aluno 52",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 53,
+            "nome": "Aluno 53",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 54,
+            "nome": "Aluno 54",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 55,
+            "nome": "Aluno 55",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 56,
+            "nome": "Aluno 56",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 57,
+            "nome": "Aluno 57",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 58,
+            "nome": "Aluno 58",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 59,
+            "nome": "Aluno 59",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 60,
+            "nome": "Aluno 60",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 61,
+            "nome": "Aluno 61",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 62,
+            "nome": "Aluno 62",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 63,
+            "nome": "Aluno 63",
+            "escola": "Escola Modelo",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 64,
+            "nome": "Aluno 64",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 65,
+            "nome": "Aluno 65",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 66,
+            "nome": "Aluno 66",
+            "escola": "Escola Futuro",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 67,
+            "nome": "Aluno 67",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 68,
+            "nome": "Aluno 68",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 69,
+            "nome": "Aluno 69",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 70,
+            "nome": "Aluno 70",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 71,
+            "nome": "Aluno 71",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 72,
+            "nome": "Aluno 72",
+            "escola": "Escola Futuro",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 73,
+            "nome": "Aluno 73",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 74,
+            "nome": "Aluno 74",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 75,
+            "nome": "Aluno 75",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 76,
+            "nome": "Aluno 76",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 77,
+            "nome": "Aluno 77",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 78,
+            "nome": "Aluno 78",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 79,
+            "nome": "Aluno 79",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 80,
+            "nome": "Aluno 80",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 81,
+            "nome": "Aluno 81",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 82,
+            "nome": "Aluno 82",
+            "escola": "Escola Modelo",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 83,
+            "nome": "Aluno 83",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 84,
+            "nome": "Aluno 84",
+            "escola": "Escola Modelo",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 85,
+            "nome": "Aluno 85",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 86,
+            "nome": "Aluno 86",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 87,
+            "nome": "Aluno 87",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 88,
+            "nome": "Aluno 88",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 89,
+            "nome": "Aluno 89",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 90,
+            "nome": "Aluno 90",
+            "escola": "Escola Modelo",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 91,
+            "nome": "Aluno 91",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 92,
+            "nome": "Aluno 92",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 93,
+            "nome": "Aluno 93",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 94,
+            "nome": "Aluno 94",
+            "escola": "Escola Futuro",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 95,
+            "nome": "Aluno 95",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 96,
+            "nome": "Aluno 96",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 97,
+            "nome": "Aluno 97",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 98,
+            "nome": "Aluno 98",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 99,
+            "nome": "Aluno 99",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 100,
+            "nome": "Aluno 100",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 101,
+            "nome": "Aluno 101",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 102,
+            "nome": "Aluno 102",
+            "escola": "Escola Modelo",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 103,
+            "nome": "Aluno 103",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 104,
+            "nome": "Aluno 104",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 105,
+            "nome": "Aluno 105",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 106,
+            "nome": "Aluno 106",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 107,
+            "nome": "Aluno 107",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 108,
+            "nome": "Aluno 108",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 109,
+            "nome": "Aluno 109",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 110,
+            "nome": "Aluno 110",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 111,
+            "nome": "Aluno 111",
+            "escola": "Escola Futuro",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 112,
+            "nome": "Aluno 112",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 113,
+            "nome": "Aluno 113",
+            "escola": "Escola Futuro",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 114,
+            "nome": "Aluno 114",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 115,
+            "nome": "Aluno 115",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 116,
+            "nome": "Aluno 116",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 117,
+            "nome": "Aluno 117",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 118,
+            "nome": "Aluno 118",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 119,
+            "nome": "Aluno 119",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 120,
+            "nome": "Aluno 120",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 121,
+            "nome": "Aluno 121",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 122,
+            "nome": "Aluno 122",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 123,
+            "nome": "Aluno 123",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 124,
+            "nome": "Aluno 124",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 125,
+            "nome": "Aluno 125",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 126,
+            "nome": "Aluno 126",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 127,
+            "nome": "Aluno 127",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 128,
+            "nome": "Aluno 128",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 129,
+            "nome": "Aluno 129",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 130,
+            "nome": "Aluno 130",
+            "escola": "Escola Futuro",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 131,
+            "nome": "Aluno 131",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 132,
+            "nome": "Aluno 132",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 133,
+            "nome": "Aluno 133",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 134,
+            "nome": "Aluno 134",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 135,
+            "nome": "Aluno 135",
+            "escola": "Escola Modelo",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 136,
+            "nome": "Aluno 136",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 137,
+            "nome": "Aluno 137",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 138,
+            "nome": "Aluno 138",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 139,
+            "nome": "Aluno 139",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 140,
+            "nome": "Aluno 140",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 141,
+            "nome": "Aluno 141",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 142,
+            "nome": "Aluno 142",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 143,
+            "nome": "Aluno 143",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 144,
+            "nome": "Aluno 144",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 145,
+            "nome": "Aluno 145",
+            "escola": "Escola Futuro",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 146,
+            "nome": "Aluno 146",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 147,
+            "nome": "Aluno 147",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 148,
+            "nome": "Aluno 148",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 149,
+            "nome": "Aluno 149",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 150,
+            "nome": "Aluno 150",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 151,
+            "nome": "Aluno 151",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 152,
+            "nome": "Aluno 152",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 153,
+            "nome": "Aluno 153",
+            "escola": "Escola Modelo",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 154,
+            "nome": "Aluno 154",
+            "escola": "Escola Modelo",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 155,
+            "nome": "Aluno 155",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 156,
+            "nome": "Aluno 156",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 157,
+            "nome": "Aluno 157",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 158,
+            "nome": "Aluno 158",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 159,
+            "nome": "Aluno 159",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 160,
+            "nome": "Aluno 160",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 161,
+            "nome": "Aluno 161",
+            "escola": "Escola Modelo",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 162,
+            "nome": "Aluno 162",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 163,
+            "nome": "Aluno 163",
+            "escola": "Escola Modelo",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 164,
+            "nome": "Aluno 164",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 165,
+            "nome": "Aluno 165",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 5 - Zona Oeste"
+        },
+        {
+            "id": 166,
+            "nome": "Aluno 166",
+            "escola": "Escola Futuro",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 167,
+            "nome": "Aluno 167",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 168,
+            "nome": "Aluno 168",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 169,
+            "nome": "Aluno 169",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 170,
+            "nome": "Aluno 170",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 171,
+            "nome": "Aluno 171",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 172,
+            "nome": "Aluno 172",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 173,
+            "nome": "Aluno 173",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 174,
+            "nome": "Aluno 174",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 175,
+            "nome": "Aluno 175",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 176,
+            "nome": "Aluno 176",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 177,
+            "nome": "Aluno 177",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 178,
+            "nome": "Aluno 178",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 179,
+            "nome": "Aluno 179",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 180,
+            "nome": "Aluno 180",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 181,
+            "nome": "Aluno 181",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 182,
+            "nome": "Aluno 182",
+            "escola": "Escola Futuro",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 183,
+            "nome": "Aluno 183",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 184,
+            "nome": "Aluno 184",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 185,
+            "nome": "Aluno 185",
+            "escola": "Escola Modelo",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 186,
+            "nome": "Aluno 186",
+            "escola": "Escola Modelo",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 187,
+            "nome": "Aluno 187",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 188,
+            "nome": "Aluno 188",
+            "escola": "Centro Educacional Beta",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 189,
+            "nome": "Aluno 189",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 190,
+            "nome": "Aluno 190",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 191,
+            "nome": "Aluno 191",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 192,
+            "nome": "Aluno 192",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 193,
+            "nome": "Aluno 193",
+            "escola": "Escola Modelo",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 194,
+            "nome": "Aluno 194",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 195,
+            "nome": "Aluno 195",
+            "escola": "Escola Modelo",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 196,
+            "nome": "Aluno 196",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 2 - Zona Norte"
+        },
+        {
+            "id": 197,
+            "nome": "Aluno 197",
+            "escola": "Instituto Alpha",
+            "rota": "Rota 4 - Zona Leste"
+        },
+        {
+            "id": 198,
+            "nome": "Aluno 198",
+            "escola": "Colégio Brasil",
+            "rota": "Rota 1 - Centro"
+        },
+        {
+            "id": 199,
+            "nome": "Aluno 199",
+            "escola": "Escola Futuro",
+            "rota": "Rota 3 - Zona Sul"
+        },
+        {
+            "id": 200,
+            "nome": "Aluno 200",
+            "escola": "Escola Futuro",
+            "rota": "Rota 1 - Centro"
+        }
+    ],
+    "registros": [
+        {
+            "data": "2025-09-26",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 29,
+            "status": "Em Rota",
+            "presencas": 38,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-26",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 29,
+            "status": "Em Rota",
+            "presencas": 41,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-26",
+            "dia_semana": "Fri",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 47,
+            "status": "Pendente",
+            "presencas": 50,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-26",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 35,
+            "status": "Em Rota",
+            "presencas": 28,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-26",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 42,
+            "status": "Pendente",
+            "presencas": 46,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-25",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 49,
+            "status": "Pendente",
+            "presencas": 24,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-25",
+            "dia_semana": "Thu",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 48,
+            "status": "Pendente",
+            "presencas": 40,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-25",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 38,
+            "status": "Em Rota",
+            "presencas": 38,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-25",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 42,
+            "status": "Pendente",
+            "presencas": 33,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-25",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 30,
+            "status": "Em Rota",
+            "presencas": 48,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-24",
+            "dia_semana": "Wed",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 24,
+            "status": "Em Rota",
+            "presencas": 42,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-24",
+            "dia_semana": "Wed",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 17,
+            "status": "Finalizado",
+            "presencas": 20,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-24",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 12,
+            "status": "Em Rota",
+            "presencas": 45,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-24",
+            "dia_semana": "Wed",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 12,
+            "status": "Em Rota",
+            "presencas": 22,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-24",
+            "dia_semana": "Wed",
+            "motorista": "João Pereira",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 16,
+            "status": "Finalizado",
+            "presencas": 46,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-23",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 35,
+            "status": "Em Rota",
+            "presencas": 44,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-23",
+            "dia_semana": "Tue",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 19,
+            "status": "Em Rota",
+            "presencas": 27,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-23",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 30,
+            "status": "Pendente",
+            "presencas": 28,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-23",
+            "dia_semana": "Tue",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 15,
+            "status": "Em Rota",
+            "presencas": 35,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-23",
+            "dia_semana": "Tue",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 48,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-22",
+            "dia_semana": "Mon",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 41,
+            "status": "Em Rota",
+            "presencas": 47,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-22",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 47,
+            "status": "Em Rota",
+            "presencas": 49,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-22",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 13,
+            "status": "Pendente",
+            "presencas": 29,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-22",
+            "dia_semana": "Mon",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 41,
+            "status": "Em Rota",
+            "presencas": 49,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-22",
+            "dia_semana": "Mon",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 29,
+            "status": "Em Rota",
+            "presencas": 24,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-21",
+            "dia_semana": "Sun",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 47,
+            "status": "Pendente",
+            "presencas": 38,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-21",
+            "dia_semana": "Sun",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 13,
+            "status": "Finalizado",
+            "presencas": 49,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-21",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 44,
+            "status": "Em Rota",
+            "presencas": 24,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-21",
+            "dia_semana": "Sun",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 35,
+            "status": "Pendente",
+            "presencas": 48,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-21",
+            "dia_semana": "Sun",
+            "motorista": "João Pereira",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 14,
+            "status": "Em Rota",
+            "presencas": 44,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-20",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 40,
+            "status": "Pendente",
+            "presencas": 44,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-20",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 16,
+            "status": "Em Rota",
+            "presencas": 42,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-20",
+            "dia_semana": "Sat",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 27,
+            "status": "Pendente",
+            "presencas": 47,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-20",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 35,
+            "status": "Pendente",
+            "presencas": 21,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-20",
+            "dia_semana": "Sat",
+            "motorista": "João Pereira",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 34,
+            "status": "Finalizado",
+            "presencas": 24,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-19",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 32,
+            "status": "Finalizado",
+            "presencas": 47,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-19",
+            "dia_semana": "Fri",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 29,
+            "status": "Em Rota",
+            "presencas": 32,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-19",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 37,
+            "status": "Em Rota",
+            "presencas": 30,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-19",
+            "dia_semana": "Fri",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 28,
+            "status": "Pendente",
+            "presencas": 42,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-19",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 37,
+            "status": "Finalizado",
+            "presencas": 37,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-18",
+            "dia_semana": "Thu",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 49,
+            "status": "Finalizado",
+            "presencas": 31,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-18",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 48,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-18",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 45,
+            "status": "Finalizado",
+            "presencas": 29,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-18",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 45,
+            "status": "Pendente",
+            "presencas": 26,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-18",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 48,
+            "status": "Pendente",
+            "presencas": 42,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-17",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 34,
+            "status": "Finalizado",
+            "presencas": 33,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-17",
+            "dia_semana": "Wed",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 35,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-17",
+            "dia_semana": "Wed",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 31,
+            "status": "Finalizado",
+            "presencas": 46,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-17",
+            "dia_semana": "Wed",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 42,
+            "status": "Em Rota",
+            "presencas": 49,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-17",
+            "dia_semana": "Wed",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 30,
+            "status": "Finalizado",
+            "presencas": 50,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-16",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 19,
+            "status": "Finalizado",
+            "presencas": 28,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-16",
+            "dia_semana": "Tue",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 13,
+            "status": "Pendente",
+            "presencas": 28,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-16",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 27,
+            "status": "Em Rota",
+            "presencas": 20,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-16",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 20,
+            "status": "Finalizado",
+            "presencas": 40,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-16",
+            "dia_semana": "Tue",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 24,
+            "status": "Finalizado",
+            "presencas": 49,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-15",
+            "dia_semana": "Mon",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 34,
+            "status": "Pendente",
+            "presencas": 39,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-15",
+            "dia_semana": "Mon",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 22,
+            "status": "Em Rota",
+            "presencas": 20,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-15",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 29,
+            "status": "Pendente",
+            "presencas": 38,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-15",
+            "dia_semana": "Mon",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 37,
+            "status": "Pendente",
+            "presencas": 21,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-15",
+            "dia_semana": "Mon",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 18,
+            "status": "Em Rota",
+            "presencas": 33,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-14",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 26,
+            "status": "Em Rota",
+            "presencas": 27,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-14",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 49,
+            "status": "Em Rota",
+            "presencas": 20,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-14",
+            "dia_semana": "Sun",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 28,
+            "status": "Pendente",
+            "presencas": 50,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-14",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 30,
+            "status": "Finalizado",
+            "presencas": 36,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-14",
+            "dia_semana": "Sun",
+            "motorista": "João Pereira",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 21,
+            "status": "Finalizado",
+            "presencas": 40,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-13",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 28,
+            "status": "Pendente",
+            "presencas": 41,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-13",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 44,
+            "status": "Em Rota",
+            "presencas": 41,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-13",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 34,
+            "status": "Finalizado",
+            "presencas": 46,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-13",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 16,
+            "status": "Finalizado",
+            "presencas": 49,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-13",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 49,
+            "status": "Pendente",
+            "presencas": 44,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-12",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 47,
+            "status": "Finalizado",
+            "presencas": 50,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-12",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 35,
+            "status": "Em Rota",
+            "presencas": 40,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-12",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 32,
+            "status": "Pendente",
+            "presencas": 41,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-12",
+            "dia_semana": "Fri",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 15,
+            "status": "Em Rota",
+            "presencas": 23,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-12",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 50,
+            "status": "Pendente",
+            "presencas": 20,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-11",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 47,
+            "status": "Finalizado",
+            "presencas": 47,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-11",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 12,
+            "status": "Em Rota",
+            "presencas": 33,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-11",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 43,
+            "status": "Em Rota",
+            "presencas": 47,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-11",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 27,
+            "status": "Finalizado",
+            "presencas": 48,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-11",
+            "dia_semana": "Thu",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 24,
+            "status": "Em Rota",
+            "presencas": 29,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-10",
+            "dia_semana": "Wed",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 17,
+            "status": "Finalizado",
+            "presencas": 24,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-10",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 42,
+            "status": "Finalizado",
+            "presencas": 48,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-10",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 20,
+            "status": "Em Rota",
+            "presencas": 24,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-10",
+            "dia_semana": "Wed",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 32,
+            "status": "Pendente",
+            "presencas": 28,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-10",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 50,
+            "status": "Finalizado",
+            "presencas": 44,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-09",
+            "dia_semana": "Tue",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 22,
+            "status": "Em Rota",
+            "presencas": 22,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-09",
+            "dia_semana": "Tue",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 26,
+            "status": "Finalizado",
+            "presencas": 28,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-09",
+            "dia_semana": "Tue",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 11,
+            "status": "Em Rota",
+            "presencas": 25,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-09",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 25,
+            "status": "Pendente",
+            "presencas": 23,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-09",
+            "dia_semana": "Tue",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 15,
+            "status": "Finalizado",
+            "presencas": 36,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-08",
+            "dia_semana": "Mon",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 45,
+            "status": "Em Rota",
+            "presencas": 50,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-08",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 23,
+            "status": "Finalizado",
+            "presencas": 21,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-08",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 20,
+            "status": "Pendente",
+            "presencas": 26,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-08",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 10,
+            "status": "Em Rota",
+            "presencas": 42,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-08",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 49,
+            "status": "Finalizado",
+            "presencas": 47,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-07",
+            "dia_semana": "Sun",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 15,
+            "status": "Pendente",
+            "presencas": 50,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-07",
+            "dia_semana": "Sun",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 20,
+            "status": "Pendente",
+            "presencas": 27,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-07",
+            "dia_semana": "Sun",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 26,
+            "status": "Finalizado",
+            "presencas": 50,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-07",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 16,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-07",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 47,
+            "status": "Pendente",
+            "presencas": 26,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-06",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 18,
+            "status": "Finalizado",
+            "presencas": 37,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-06",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 46,
+            "status": "Pendente",
+            "presencas": 26,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-06",
+            "dia_semana": "Sat",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 14,
+            "status": "Pendente",
+            "presencas": 32,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-06",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 20,
+            "status": "Pendente",
+            "presencas": 24,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-06",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 22,
+            "status": "Em Rota",
+            "presencas": 20,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-05",
+            "dia_semana": "Fri",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 29,
+            "status": "Pendente",
+            "presencas": 32,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-05",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 48,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-05",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 47,
+            "status": "Em Rota",
+            "presencas": 45,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-05",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 20,
+            "status": "Em Rota",
+            "presencas": 39,
+            "faltas": 6
+        },
+        {
+            "data": "2025-09-05",
+            "dia_semana": "Fri",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 15,
+            "status": "Em Rota",
+            "presencas": 37,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-04",
+            "dia_semana": "Thu",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 25,
+            "status": "Em Rota",
+            "presencas": 50,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-04",
+            "dia_semana": "Thu",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 41,
+            "status": "Em Rota",
+            "presencas": 38,
+            "faltas": 4
+        },
+        {
+            "data": "2025-09-04",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 10,
+            "status": "Em Rota",
+            "presencas": 45,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-04",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 16,
+            "status": "Em Rota",
+            "presencas": 48,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-04",
+            "dia_semana": "Thu",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 37,
+            "status": "Finalizado",
+            "presencas": 41,
+            "faltas": 5
+        },
+        {
+            "data": "2025-09-03",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 50,
+            "status": "Em Rota",
+            "presencas": 48,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-03",
+            "dia_semana": "Wed",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 44,
+            "status": "Finalizado",
+            "presencas": 34,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-03",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 13,
+            "status": "Finalizado",
+            "presencas": 40,
+            "faltas": 2
+        },
+        {
+            "data": "2025-09-03",
+            "dia_semana": "Wed",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 41,
+            "status": "Em Rota",
+            "presencas": 29,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-03",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 37,
+            "status": "Pendente",
+            "presencas": 48,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-02",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 46,
+            "status": "Finalizado",
+            "presencas": 31,
+            "faltas": 10
+        },
+        {
+            "data": "2025-09-02",
+            "dia_semana": "Tue",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 50,
+            "status": "Pendente",
+            "presencas": 39,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-02",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 48,
+            "status": "Finalizado",
+            "presencas": 38,
+            "faltas": 1
+        },
+        {
+            "data": "2025-09-02",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 23,
+            "status": "Pendente",
+            "presencas": 36,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-02",
+            "dia_semana": "Tue",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 43,
+            "status": "Em Rota",
+            "presencas": 49,
+            "faltas": 7
+        },
+        {
+            "data": "2025-09-01",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 46,
+            "status": "Pendente",
+            "presencas": 38,
+            "faltas": 8
+        },
+        {
+            "data": "2025-09-01",
+            "dia_semana": "Mon",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 43,
+            "status": "Finalizado",
+            "presencas": 33,
+            "faltas": 9
+        },
+        {
+            "data": "2025-09-01",
+            "dia_semana": "Mon",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 31,
+            "status": "Em Rota",
+            "presencas": 25,
+            "faltas": 3
+        },
+        {
+            "data": "2025-09-01",
+            "dia_semana": "Mon",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 24,
+            "status": "Finalizado",
+            "presencas": 24,
+            "faltas": 0
+        },
+        {
+            "data": "2025-09-01",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 45,
+            "status": "Finalizado",
+            "presencas": 46,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-31",
+            "dia_semana": "Sun",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 27,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-31",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 24,
+            "status": "Pendente",
+            "presencas": 36,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-31",
+            "dia_semana": "Sun",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 18,
+            "status": "Em Rota",
+            "presencas": 22,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-31",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 20,
+            "status": "Finalizado",
+            "presencas": 35,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-31",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 30,
+            "status": "Finalizado",
+            "presencas": 47,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-30",
+            "dia_semana": "Sat",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 20,
+            "status": "Pendente",
+            "presencas": 30,
+            "faltas": 2
+        },
+        {
+            "data": "2025-08-30",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 14,
+            "status": "Pendente",
+            "presencas": 48,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-30",
+            "dia_semana": "Sat",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 15,
+            "status": "Em Rota",
+            "presencas": 26,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-30",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 20,
+            "status": "Pendente",
+            "presencas": 49,
+            "faltas": 2
+        },
+        {
+            "data": "2025-08-30",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 15,
+            "status": "Pendente",
+            "presencas": 29,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-29",
+            "dia_semana": "Fri",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 38,
+            "status": "Em Rota",
+            "presencas": 21,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-29",
+            "dia_semana": "Fri",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 10,
+            "status": "Em Rota",
+            "presencas": 23,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-29",
+            "dia_semana": "Fri",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 14,
+            "status": "Finalizado",
+            "presencas": 42,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-29",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 39,
+            "status": "Pendente",
+            "presencas": 41,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-29",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 28,
+            "status": "Pendente",
+            "presencas": 25,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-28",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 50,
+            "status": "Pendente",
+            "presencas": 40,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-28",
+            "dia_semana": "Thu",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 50,
+            "status": "Finalizado",
+            "presencas": 41,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-28",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 14,
+            "status": "Em Rota",
+            "presencas": 39,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-28",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 16,
+            "status": "Em Rota",
+            "presencas": 48,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-28",
+            "dia_semana": "Thu",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 32,
+            "status": "Em Rota",
+            "presencas": 50,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-27",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 29,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-27",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 11,
+            "status": "Finalizado",
+            "presencas": 20,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-27",
+            "dia_semana": "Wed",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 14,
+            "status": "Finalizado",
+            "presencas": 43,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-27",
+            "dia_semana": "Wed",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 28,
+            "status": "Em Rota",
+            "presencas": 46,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-27",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 20,
+            "status": "Finalizado",
+            "presencas": 41,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-26",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 31,
+            "status": "Em Rota",
+            "presencas": 32,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-26",
+            "dia_semana": "Tue",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 17,
+            "status": "Pendente",
+            "presencas": 26,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-26",
+            "dia_semana": "Tue",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 17,
+            "status": "Pendente",
+            "presencas": 34,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-26",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 42,
+            "status": "Em Rota",
+            "presencas": 23,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-26",
+            "dia_semana": "Tue",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 46,
+            "status": "Finalizado",
+            "presencas": 20,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-25",
+            "dia_semana": "Mon",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 43,
+            "status": "Em Rota",
+            "presencas": 31,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-25",
+            "dia_semana": "Mon",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 35,
+            "status": "Em Rota",
+            "presencas": 44,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-25",
+            "dia_semana": "Mon",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 32,
+            "status": "Pendente",
+            "presencas": 30,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-25",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 36,
+            "status": "Finalizado",
+            "presencas": 46,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-25",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 12,
+            "status": "Pendente",
+            "presencas": 26,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-24",
+            "dia_semana": "Sun",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 11,
+            "status": "Finalizado",
+            "presencas": 24,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-24",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 27,
+            "status": "Pendente",
+            "presencas": 37,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-24",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 35,
+            "status": "Finalizado",
+            "presencas": 33,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-24",
+            "dia_semana": "Sun",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 40,
+            "status": "Em Rota",
+            "presencas": 39,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-24",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 18,
+            "status": "Pendente",
+            "presencas": 47,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-23",
+            "dia_semana": "Sat",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 35,
+            "status": "Pendente",
+            "presencas": 45,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-23",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 25,
+            "status": "Finalizado",
+            "presencas": 31,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-23",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 31,
+            "status": "Finalizado",
+            "presencas": 34,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-23",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 12,
+            "status": "Finalizado",
+            "presencas": 43,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-23",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 21,
+            "status": "Pendente",
+            "presencas": 43,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-22",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 18,
+            "status": "Finalizado",
+            "presencas": 29,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-22",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 24,
+            "status": "Finalizado",
+            "presencas": 39,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-22",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 43,
+            "status": "Em Rota",
+            "presencas": 30,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-22",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 17,
+            "status": "Finalizado",
+            "presencas": 31,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-22",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 48,
+            "status": "Em Rota",
+            "presencas": 40,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-21",
+            "dia_semana": "Thu",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 21,
+            "status": "Finalizado",
+            "presencas": 30,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-21",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 28,
+            "status": "Pendente",
+            "presencas": 31,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-21",
+            "dia_semana": "Thu",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 35,
+            "status": "Em Rota",
+            "presencas": 30,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-21",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 33,
+            "status": "Finalizado",
+            "presencas": 22,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-21",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 27,
+            "status": "Em Rota",
+            "presencas": 26,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-20",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 45,
+            "status": "Em Rota",
+            "presencas": 35,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-20",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 39,
+            "status": "Em Rota",
+            "presencas": 45,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-20",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 38,
+            "status": "Finalizado",
+            "presencas": 49,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-20",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 16,
+            "status": "Finalizado",
+            "presencas": 38,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-20",
+            "dia_semana": "Wed",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 41,
+            "status": "Finalizado",
+            "presencas": 21,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-19",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 27,
+            "status": "Pendente",
+            "presencas": 23,
+            "faltas": 2
+        },
+        {
+            "data": "2025-08-19",
+            "dia_semana": "Tue",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 38,
+            "status": "Em Rota",
+            "presencas": 22,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-19",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 43,
+            "status": "Pendente",
+            "presencas": 24,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-19",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 34,
+            "status": "Em Rota",
+            "presencas": 37,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-19",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 29,
+            "status": "Finalizado",
+            "presencas": 47,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-18",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 15,
+            "status": "Em Rota",
+            "presencas": 26,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-18",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 25,
+            "status": "Finalizado",
+            "presencas": 42,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-18",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 35,
+            "status": "Pendente",
+            "presencas": 49,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-18",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 23,
+            "status": "Finalizado",
+            "presencas": 25,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-18",
+            "dia_semana": "Mon",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 26,
+            "status": "Em Rota",
+            "presencas": 35,
+            "faltas": 2
+        },
+        {
+            "data": "2025-08-17",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 31,
+            "status": "Em Rota",
+            "presencas": 28,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-17",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 37,
+            "status": "Finalizado",
+            "presencas": 28,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-17",
+            "dia_semana": "Sun",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 44,
+            "status": "Em Rota",
+            "presencas": 21,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-17",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 16,
+            "status": "Finalizado",
+            "presencas": 25,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-17",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 46,
+            "status": "Em Rota",
+            "presencas": 24,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-16",
+            "dia_semana": "Sat",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 1 - Centro",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 36,
+            "status": "Finalizado",
+            "presencas": 43,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-16",
+            "dia_semana": "Sat",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 44,
+            "status": "Em Rota",
+            "presencas": 24,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-16",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 16,
+            "status": "Em Rota",
+            "presencas": 26,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-16",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 22,
+            "status": "Pendente",
+            "presencas": 29,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-16",
+            "dia_semana": "Sat",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 23,
+            "status": "Pendente",
+            "presencas": 42,
+            "faltas": 2
+        },
+        {
+            "data": "2025-08-15",
+            "dia_semana": "Fri",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 46,
+            "status": "Em Rota",
+            "presencas": 37,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-15",
+            "dia_semana": "Fri",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 22,
+            "status": "Em Rota",
+            "presencas": 39,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-15",
+            "dia_semana": "Fri",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 32,
+            "status": "Finalizado",
+            "presencas": 35,
+            "faltas": 8
+        },
+        {
+            "data": "2025-08-15",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 38,
+            "status": "Pendente",
+            "presencas": 24,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-15",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 17,
+            "status": "Finalizado",
+            "presencas": 39,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-14",
+            "dia_semana": "Thu",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 33,
+            "status": "Finalizado",
+            "presencas": 36,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-14",
+            "dia_semana": "Thu",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 24,
+            "status": "Em Rota",
+            "presencas": 44,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-14",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 48,
+            "status": "Pendente",
+            "presencas": 22,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-14",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 41,
+            "status": "Em Rota",
+            "presencas": 37,
+            "faltas": 2
+        },
+        {
+            "data": "2025-08-14",
+            "dia_semana": "Thu",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 21,
+            "status": "Em Rota",
+            "presencas": 41,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-13",
+            "dia_semana": "Wed",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 27,
+            "status": "Em Rota",
+            "presencas": 32,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-13",
+            "dia_semana": "Wed",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 21,
+            "status": "Finalizado",
+            "presencas": 37,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-13",
+            "dia_semana": "Wed",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 34,
+            "status": "Finalizado",
+            "presencas": 23,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-13",
+            "dia_semana": "Wed",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 10,
+            "status": "Em Rota",
+            "presencas": 48,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-13",
+            "dia_semana": "Wed",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 44,
+            "status": "Pendente",
+            "presencas": 28,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-12",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 19,
+            "status": "Em Rota",
+            "presencas": 39,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-12",
+            "dia_semana": "Tue",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 42,
+            "status": "Finalizado",
+            "presencas": 27,
+            "faltas": 10
+        },
+        {
+            "data": "2025-08-12",
+            "dia_semana": "Tue",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 32,
+            "status": "Em Rota",
+            "presencas": 49,
+            "faltas": 6
+        },
+        {
+            "data": "2025-08-12",
+            "dia_semana": "Tue",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 15,
+            "status": "Em Rota",
+            "presencas": 43,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-12",
+            "dia_semana": "Tue",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 50,
+            "status": "Finalizado",
+            "presencas": 45,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-11",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 14,
+            "status": "Finalizado",
+            "presencas": 42,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-11",
+            "dia_semana": "Mon",
+            "motorista": "João Pereira",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 10,
+            "status": "Em Rota",
+            "presencas": 27,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-11",
+            "dia_semana": "Mon",
+            "motorista": "João Pereira",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 45,
+            "status": "Em Rota",
+            "presencas": 34,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-11",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 35,
+            "status": "Em Rota",
+            "presencas": 35,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-11",
+            "dia_semana": "Mon",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 16,
+            "status": "Pendente",
+            "presencas": 26,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-10",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 1 - Centro",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 42,
+            "status": "Pendente",
+            "presencas": 24,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-10",
+            "dia_semana": "Sun",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 22,
+            "status": "Finalizado",
+            "presencas": 26,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-10",
+            "dia_semana": "Sun",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 17,
+            "status": "Em Rota",
+            "presencas": 20,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-10",
+            "dia_semana": "Sun",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 22,
+            "status": "Pendente",
+            "presencas": 39,
+            "faltas": 1
+        },
+        {
+            "data": "2025-08-10",
+            "dia_semana": "Sun",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 12,
+            "status": "Pendente",
+            "presencas": 32,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-09",
+            "dia_semana": "Sat",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 43,
+            "status": "Finalizado",
+            "presencas": 41,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-09",
+            "dia_semana": "Sat",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 24,
+            "status": "Finalizado",
+            "presencas": 20,
+            "faltas": 0
+        },
+        {
+            "data": "2025-08-09",
+            "dia_semana": "Sat",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 17,
+            "status": "Em Rota",
+            "presencas": 34,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-09",
+            "dia_semana": "Sat",
+            "motorista": "João Pereira",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 10,
+            "status": "Finalizado",
+            "presencas": 23,
+            "faltas": 4
+        },
+        {
+            "data": "2025-08-09",
+            "dia_semana": "Sat",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 27,
+            "status": "Pendente",
+            "presencas": 43,
+            "faltas": 9
+        },
+        {
+            "data": "2025-08-08",
+            "dia_semana": "Fri",
+            "motorista": "Patrícia Gomes",
+            "rota": "Rota 1 - Centro",
+            "escola": "Escola Futuro",
+            "qtd_passageiros": 43,
+            "status": "Em Rota",
+            "presencas": 30,
+            "faltas": 3
+        },
+        {
+            "data": "2025-08-08",
+            "dia_semana": "Fri",
+            "motorista": "Fernanda Santos",
+            "rota": "Rota 2 - Zona Norte",
+            "escola": "Escola Modelo",
+            "qtd_passageiros": 42,
+            "status": "Pendente",
+            "presencas": 34,
+            "faltas": 7
+        },
+        {
+            "data": "2025-08-08",
+            "dia_semana": "Fri",
+            "motorista": "Ricardo Almeida",
+            "rota": "Rota 3 - Zona Sul",
+            "escola": "Colégio Brasil",
+            "qtd_passageiros": 18,
+            "status": "Finalizado",
+            "presencas": 31,
+            "faltas": 2
+        },
+        {
+            "data": "2025-08-08",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 4 - Zona Leste",
+            "escola": "Centro Educacional Beta",
+            "qtd_passageiros": 35,
+            "status": "Finalizado",
+            "presencas": 42,
+            "faltas": 5
+        },
+        {
+            "data": "2025-08-08",
+            "dia_semana": "Fri",
+            "motorista": "Carlos Silva",
+            "rota": "Rota 5 - Zona Oeste",
+            "escola": "Instituto Alpha",
+            "qtd_passageiros": 25,
+            "status": "emrota",
+            "presencas": 45,
+            "faltas": 8
+        }
+    ]
+}
