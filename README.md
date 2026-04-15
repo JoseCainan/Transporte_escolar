@@ -13,7 +13,6 @@ O sistema é composto por:
 
 ## 🛠️ Tecnologias utilizadas
 - HTML, CSS, JavaScript
-- Frameworks web (se tiver, coloca)
 - Integração com APIs REST
 
 ## 👨‍💻 Minha contribuição
