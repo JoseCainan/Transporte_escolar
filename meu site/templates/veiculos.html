@@ -11,9 +11,9 @@
         <div class="logo">ROTA+</div>
         <ul>
             <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="#">Alunos</a></li>
+            <li><a href="/alunos">Alunos</a></li>
             <li class="active"><a href="/veiculos">Veículos</a></li>
-            <li><a href="#">Motorista</a></li>
+            <li><a href="/motoristas">Motorista</a></li>
             <li><a href="/rotas">Rotas</a></li>
             <li><a href="/despesas">Despesas</a></li>
             <li><a href="#">Configurações</a></li>
@@ -21,52 +21,106 @@
     </aside>
 
     <main class="content">
+
         <header class="topbar">
             <h1>Veículos</h1>
-            <button class="btn-green">Adicionar Veículo +</button>
+            <button id="btnAddVeiculo" class="btn-green">Adicionar Veículo +</button>
         </header>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Adicionar Veículo</h2>
+                <form action="/adicionar_veiculo" method="POST" class="form-modal">
+                    <label>Modelo:</label>
+                    <input type="text" name="modelo" required>
+
+                    <label>Placa:</label>
+                    <input type="text" name="placa" required>
+
+                    <label>Combustível:</label>
+                    <input type="text" name="combustivel" required>
+
+                    <label>Data:</label>
+                    <input type="date" name="data" required>
+
+                    <label>Observações:</label>
+                    <textarea name="observacoes"></textarea>
+
+                    <label>Motorista:</label>
+                    <input type="text" name="motorista">
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn-cancel" id="btnCancel">Cancelar</button>
+                        <button type="submit" class="btn-green">Salvar</button>
+                    </div>
+                </form>
+            </div>
+</div>
 
         <div class="searchbar">
             <input type="text" placeholder="Pesquise por: Veículo ou Placa">
         </div>
 
+
+
         <section class="container">
             <div class="lista">
-                <div class="card selected">
-                    <h3>Ônibus Mercedes - ROC4J23</h3>
-                    <p>Diesel</p>
-                    <p>20/02/2025</p>
+                {% for v in veiculos %}
+                <div class="card {% if loop.first %}selected{% endif %}"
+                     data-modelo="{{ v.modelo }}"
+                     data-placa="{{ v.placa }}"
+                     data-combustivel="{{ v.combustivel }}"
+                     data-data="{{ v.data }}"
+                     data-observacoes="{{ v.observacoes }}"
+                     data-motorista="{{ v.motorista }}">
+                    <h3>{{ v.modelo }} - {{ v.placa }}</h3>
+                    <p>{{ v.combustivel }}</p>
+                    <p>{{ v.data }}</p>
                 </div>
-
-                <div class="card">
-                    <h3>Ônibus Mercedes - ROC4J23</h3>
-                    <p>Diesel</p>
-                    <p>26/02/2025</p>
-                </div>
-
-                <div class="card">
-                    <h3>Ônibus Mercedes - ROC4J23</h3>
-                    <p>Diesel</p>
-                    <p>29/04/2025</p>
-                </div>
+                {% endfor %}
             </div>
 
             <div class="detalhes">
                 <div class="box">
-                    <h3>Ônibus Mercedes - ROC4J23</h3>
-                    <p>Diesel | 20/02/2025</p>
+                    <h3 id="veiculo-nome">Selecione um veículo</h3>
+                    <p id="veiculo-info"></p>
                     
                     <h4>Observações</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p id="veiculo-observacoes"></p>
                     
                     <h4>Motorista</h4>
-                    <p class="motorista">José Cainan ✎</p>
+                    <p class="motorista" id="veiculo-motorista"></p>
                 </div>
             </div>
         </section>
     </main>
+
+     <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+
+                document.getElementById('veiculo-nome').textContent = card.dataset.modelo + " - " + card.dataset.placa;
+                document.getElementById('veiculo-info').textContent = card.dataset.combustivel + " | " + card.dataset.data;
+                document.getElementById('veiculo-observacoes').textContent = card.dataset.observacoes || "Sem observações.";
+                document.getElementById('veiculo-motorista').textContent = card.dataset.motorista || "Não informado";
+            });
+        });
+
+        const modal = document.getElementById("modal");
+        const btn = document.getElementById("btnAddVeiculo");
+        const span = document.querySelector(".close");
+        const cancelBtn = document.getElementById("btnCancel");
+
+        btn.onclick = () => modal.style.display = "flex";
+        span.onclick = () => modal.style.display = "none";
+        cancelBtn.onclick = () => modal.style.display = "none";
+        window.onclick = (event) => {
+            if (event.target == modal) modal.style.display = "none";
+        };
+
+    </script>
 </body>
 </html>

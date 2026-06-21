@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #1e1f29;
+    color: white;
+    padding: 20px;
+    position: fixed;           /* Fixa na lateral */
+    top: 0;
+    left: 0;
+    bottom: 0;                 /* Faz ocupar toda a altura da janela */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .active a {
+    font-weight: bold;
+    color: #2ac47d;
+}
+
+/* Ajuste no conteúdo principal */
+.main-content {
+    flex: 1;
+    padding: 20px 40px;
+    margin-left: 240px; /* Dá espaço para a sidebar fixa */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-btn {
+    background: #2ac47d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.motoristas-list {
+    width: 45%;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.motorista-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.motorista-card:hover {
+    transform: scale(1.02);
+}
+
+.motorista-card.ativo {
+    border: 2px solid #2ac47d;
+}
+
+.editar {
+    background: #2ac47d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+.motorista-detalhes {
+    flex: 1;
+}
+
+.painel {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.painel .alterar {
+    display: block;
+    background: #e2b630;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.rotas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rota-card {
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+}
